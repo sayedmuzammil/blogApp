@@ -5,10 +5,14 @@
 
 :root {
   --primary: oklch(0.205 0 0);
-  --secondary: oklch(0.97 0 0);
+  --secondary: oklch(0.6353 0.1505 241.91);
   --neutral: #f3f3f3;
   --darkBackground: #0a0a0a;
   --darkForeground: #ededed;
+  --primary-100: #E5F4FB;
+  --primary-200: #6FCFFF;
+  --primary-button: #0093DD;
+  --primary-400: #050A1B;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -39,6 +43,7 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
 }
 
 @theme inline {
@@ -49,6 +54,7 @@
   --color-neutral: var(--neutral);  
   --color-darkBackground: var(--darkBackground);
   --color-darkForeground: var(--darkForeground);
+  --color-primary-button: var(--primary-button);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-sidebar-ring: var(--sidebar-ring);
