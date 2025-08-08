@@ -28,8 +28,11 @@ const LoginPage = () => {
   const [showPassword, setShowPassword] = React.useState(false);
 
   return (
-    <div className="flex items-center justify-center w-full min-h-screen bg-var[--color-background] dark:bg-var[--colordarkBackground]">
-      <div className="w-[345px] flex flex-col items-start justify-between p-6 border-2 border-gray-300 shadow-lg dark:border-gray-600">
+    <div className="flex items-center justify-center w-full min-h-screen bg-[var(--color-background)] dark:bg-var[--colordarkBackground]">
+      <div
+        className="w-[345px] flex flex-col items-start justify-between p-6 border-2 
+      border-[var(--color-border)] shadow-lg dark:border-[var(--color-border)] rounded-2xl"
+      >
         <div className="text-md font-bold ">Sign In</div>
         <Form.Root className="FormRoot w-full">
           {inputFields.map((field) => (
@@ -61,7 +64,7 @@ const LoginPage = () => {
                     type={field.type}
                     placeholder={field.placeholder}
                     required
-                    className="w-full px-3 py-2 border border-neutral-300 rounded-2xl "
+                    className="w-full px-3 py-2 border border-[var(--color-border)] rounded-2xl "
                   />
                 </Form.Control>
               </div>
